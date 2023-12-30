@@ -1,0 +1,244 @@
+.Cimageion {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+
+}
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+.uploaded-image{
+    max-height: 40vh;
+    max-width: 30vw;
+    border-radius: 5px
+}
+.emoji-last-msg{
+    height: 45px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.icon-last-msg{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: max-content;
+    margin: 5px 0;
+}
+.box-container {
+    height: 85vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    margin-top: 76px;
+}
+.double-tick{
+    font-size: 25px;    
+}
+
+.message-container {
+    height: 75vh;
+    width: 60vw;
+    border-radius: 6px 6px 5px 5px;
+    outline: 2px solid rgb(112, 101, 101);
+    padding: 20px 15px 0;
+    overflow-y: auto;
+}
+
+.message-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.message-container::-webkit-scrollbar-track {
+    box-shadow: 0 0 6px rgba(37, 36, 36, 0.3);
+
+    border-top-right-radius: 80px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    background-color: rgb(174, 174, 174);
+
+}
+
+.send-msg-icon {
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    height: 42px;
+    width: 50px;
+    background-color: #e8eaf6;
+    border-radius: 0 10px 10px 0;
+    outline: 2px solid black;
+    display: grid;
+    place-items: center;
+}
+
+.image-container:hover img {
+    transform: translateX(7px);
+}
+
+.send-msg-icon:hover {
+    cursor: pointer;
+}
+
+.input-box {
+    width: 52vw;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 25px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: 2px solid black;
+}
+.last-message {
+    color: #ff0000;
+  }
+
+.pickerStyle-container {
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    bottom: 11vh;
+}
+
+.bottom-container {
+    width: 64vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.top-bottom {
+    display: grid;
+    place-items: center;
+    width: 63vw;
+    margin-bottom: 10px;
+
+}
+
+.message {
+    
+    width: max-content;
+    padding: 0 10px;
+    font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
+    font-size: 25px;
+    border-radius: 7px;
+    max-width: 40vw;
+    height: auto;
+    /* margin-top: 7px; */
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+.lefts{
+    background-color: rgb(166, 171, 181);
+}
+.rights{
+    background-color: rgb(110, 139, 246);
+}
+.right{
+    float: right;
+    clear: both;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.emoji-icon {
+    font-size: 35px;
+}
+
+.date-time {
+    font-size: 10px;
+    display: flex;
+    justify-content: end;
+    padding-left: 6px;
+}
+
+@media screen and (max-width:426px) {
+    .top-bottom {
+        width: 100vw;
+    }
+    .message {
+        max-width: 60vw;
+    }
+    .message-container {
+        width: 88vw;
+    }
+   
+    .uploaded-image{
+        max-height: 100vh;
+        max-width: 60vw;
+    }
+    .send-msg-icon {
+        height: 25px;
+        width: 25px;
+    }
+
+    .bottom-container {
+        width: 100vw;
+    }
+
+    .top-bottom {
+        margin-top: -8px;
+    }
+
+    .input-box {
+        width: 64vw;
+    }
+
+    .image-container {
+        width: 38px;
+    }
+
+    .emoji-icon {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:769px) and (min-width:426px) {
+    .top-bottom {
+        width: 100vw;
+    }
+    .message{
+        max-width: 60vw;
+    }
+    .message-container {
+        width: 88vw;
+    }
+
+    .bottom-container {
+        width: 100vw;
+    }
+
+    .top-bottom {
+        margin-top: 5px;
+    }
+
+    .input-box {
+        width: 70.5vw;
+    }
+    .uploaded-image{
+        max-height: 100vh;
+        max-width: 60vw;
+    }
+    .image-container {
+        /* max-width: 8vw; */
+        /* min-width: 8vw; */
+        width: 40px;
+    }
+    .image-container img{
+        height: 30px;
+        width: 30px;
+    }
+}
